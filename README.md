@@ -46,11 +46,7 @@ The comparison currently uses eight joint-angle patterns and 100 normalised time
 
 **Important:** This percentage represents similarity to the selected reference recording. It is not a scientifically validated technique score or a professional coaching grade.
 
-### 8. 3D Cricket Visualisation
-
-Includes a 3D cricket batter model as part of the technique visualisation experience.
-
----
+### 7. 3D Cricket Visualisation
 
 ## Project Structure(v0.1)
 

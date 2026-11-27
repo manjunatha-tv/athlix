@@ -33,22 +33,11 @@ ATHIX is being developed as a prototype, with the long-term goal of making sport
 ## Key Features
 
 ### 1. Video-Based Analysis
-
 ### 2. YOLO Pose Estimation
-
 ### 3. Joint-Angle Calculation
-
-Calculates selected biomechanical angles, including:
-
-- Left and right elbow angles
-- Left and right knee angles
-- Left and right shoulder angles
-- Left and right hip angles
-
+Calculates selected biomechanical angles
 ### 4. Movement Data Processing
-
 ### 5. Annotated Video Visualisation
-
 ### 6. Experimental Similarity Measurement
 
 ATHIX calculates an experimental similarity percentage between the player's recording and the saved trainer reference.

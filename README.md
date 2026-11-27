@@ -193,6 +193,6 @@ If you would like to contribute:
 
 Creator and developer of ATHIX.
 
-- linkedIn: [@manjunatha-tv]((https://www.linkedin.com/in/manjunatha-t-v-07a301429/))
+- linkedIn: [@manjunatha-tv](https://www.linkedin.com/in/manjunatha-t-v-07a301429/))
 
 ---

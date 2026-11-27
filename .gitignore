@@ -1,0 +1,40 @@
+﻿# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Python environments
+venv/
+backend/venv/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Private videos and generated data
+backend/uploads/
+backend/outputs/
+backend/references/
+
+# Generated CSV and PNG files
+backend/*.csv
+backend/*.png
+
+# Model weights
+*.pt
+*.onnx
+
+# Build files
+frontend/dist/
+dist/
+build/
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db

@@ -92,37 +92,7 @@ Includes a 3D cricket batter model as part of the technique visualisation experi
 
 ---
 
-## How ATHIX Works
 
-The current analysis workflow follows these stages:
-
-```text
-          CRICKET VIDEO
-                |
-                v
-        VIDEO VALIDATION
-                |
-                v
-        YOLO POSE ESTIMATION
-                |
-                v
-        BODY LANDMARK EXTRACTION
-                |
-                v
-        JOINT-ANGLE CALCULATION
-                |
-                v
-         ANGLE SMOOTHING
-                |
-                v
-       MOVEMENT-PHASE DETECTION
-                |
-                v
-        REFERENCE COMPARISON
-                |
-                v
-       ANALYSIS & VISUALISATION
-```
 
 ### Stage 1 — Video Input
 

@@ -10,7 +10,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Prototype-orange" alt="Project status">
-  <img src="https://img.shields.io/badge/Focus-Cricket%20Batting-green" alt="Focus">
   <img src="https://img.shields.io/badge/AI-YOLO%20Pose-blue" alt="YOLO Pose">
   <img src="https://img.shields.io/badge/Frontend-React%20%2B%20TypeScript-3178C6" alt="Frontend">
   <img src="https://img.shields.io/badge/Backend-FastAPI-009688" alt="Backend">

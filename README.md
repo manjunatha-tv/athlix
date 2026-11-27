@@ -92,61 +92,6 @@ Includes a 3D cricket batter model as part of the technique visualisation experi
 
 ---
 
-
-
-### Stage 1 — Video Input
-
-The user uploads a cricket batting video.
-
-The application validates the recording before processing.
-
-### Stage 2 — Pose Estimation
-
-The YOLO pose model detects body landmarks in the video frames.
-
-These landmarks represent important body positions such as the shoulders, elbows, wrists, hips, knees and ankles.
-
-### Stage 3 — Joint-Angle Calculation
-
-The extracted landmarks are used to calculate selected joint angles using geometric calculations.
-
-### Stage 4 — Smoothing
-
-The angle measurements are processed to reduce frame-to-frame fluctuations.
-
-### Stage 5 — Movement-Phase Detection
-
-The system analyses movement measurements to generate movement-phase labels.
-
-Phase detection is currently experimental and requires further validation on different batting recordings.
-
-### Stage 6 — Reference Comparison
-
-The player's extracted joint-angle patterns are compared with a saved trainer reference for the selected technique.
-
-### Stage 7 — Results
-
-The frontend presents the analysis, annotated video, joint-angle measurements and experimental similarity results.
-
----
-
-## Technology Stack
-
-| Component | Technology |
-|---|---|
-| Frontend | React |
-| Programming language | TypeScript |
-| Frontend build tool | Vite |
-| Backend | Python |
-| Backend framework | FastAPI |
-| Pose estimation | Ultralytics YOLO Pose |
-| Computer vision | OpenCV |
-| Numerical processing | NumPy |
-| Tabular data processing | Pandas |
-| 3D model asset | GLB |
-
----
-
 ## Project Structure(v0.1)
 
 ```text
@@ -197,7 +142,6 @@ Make sure you have installed:
 - Python 3.10 or a compatible version for the backend dependencies.
 - Node.js and npm.
 - Git.
-- A computer capable of running the YOLO pose model.
 
 ### 1. Clone the Repository
 
@@ -272,60 +216,6 @@ Open the local URL displayed by Vite in your browser.
 
 ---
 
-## Trainer Reference Workflow
-
-One of the experimental features of ATHIX is reference-based technique comparison.
-
-The intended workflow is:
-
-1. Upload a trainer's demonstration video.
-2. Analyse the video and extract its pose landmarks and joint angles.
-3. Save the extracted measurements as a reference for a technique, such as Straight Drive.
-4. Upload a player's recording.
-5. Analyse the player's movement using the same pipeline.
-6. Compare the player's measurements against the saved trainer reference.
-7. View the experimental similarity results.
-
-This approach uses previously extracted trainer measurements instead of requiring the trainer's video to be processed every time a player is analysed.
-
----
-
-## Current Limitations
-
-ATHIX is an ongoing prototype. Its results should be interpreted with care.
-
-- Pose estimation accuracy depends on camera position, lighting, visibility and video quality.
-- A 2D pose model does not provide complete 3D biomechanics measurements.
-- The system currently focuses on body landmarks and joint angles; it does not provide validated bat or ball tracking.
-- Movement-phase detection is experimental and may misclassify short or low-motion recordings.
-- Similarity percentages are based on estimated joint-angle patterns and are not validated coaching scores.
-- Differences in camera perspective, player orientation and recording conditions can affect comparisons.
-- A single trainer reference cannot represent every valid batting style.
-
-ATHIX is intended as an experimental analysis and visualisation tool, not a replacement for professional coaching or sports-science assessment.
-
----
-
-## Roadmap
-
-The project will evolve as the analysis pipeline becomes more reliable.
-
-- [x] Initial cricket batting analysis prototype
-- [x] YOLO-based human pose extraction
-- [x] Joint-angle calculation
-- [x] Angle smoothing
-- [x] Basic movement-phase detection
-- [x] Trainer reference saving and experimental comparison
-- [x] Annotated pose-video visualisation
-- [ ] Improve movement-phase detection
-- [ ] Improve pose-estimation reliability
-- [ ] Add more cricket batting techniques
-- [ ] Improve reference alignment and comparison
-- [ ] Develop more interpretable technique feedback
-- [ ] Expand towards additional sports
-
----
-
 ## Contributing
 
 ATHIX is currently under active development.
@@ -341,15 +231,6 @@ If you would like to contribute:
 5. Submit a pull request describing your contribution.
 
 ---
-
-## Project Status
-
-**ATHIX is an experimental prototype under active development.**
-
-The current priority is improving the reliability of pose extraction, movement analysis and reference-based comparison before expanding the platform.
-
----
-
 ## Author
 
 **Manjunatha T V**
@@ -359,8 +240,3 @@ Creator and developer of ATHIX.
 - GitHub: [@manjunatha-tv](https://github.com/manjunatha-tv)
 
 ---
-
-<p align="center">
-  <strong>ATHIX</strong><br>
-  Making sports movement easier to understand through computer vision.
-</p>

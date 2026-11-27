@@ -29,30 +29,12 @@ The initial development focuses on **cricket batting**, beginning with the Strai
 
 ATHIX is being developed as a prototype, with the long-term goal of making sports technique analysis more accessible, interpretable and useful for athletes and coaches.
 
-## The Problem
-
-Athletes often depend on coaches or manual video review to understand the technical details of their movements.
-
-However:
-
-- Analysing movement frame by frame can be time-consuming.
-- Small differences in body positioning can be difficult to identify visually.
-- Athletes may not have access to professional sports-analysis equipment.
-- Comparing an athlete's technique against a reference demonstration is not always straightforward.
-
-ATHIX explores a computer-vision-based approach to make these measurements easier to inspect.
 
 ## Key Features
 
 ### 1. Video-Based Analysis
 
-Upload a cricket batting video and process it through the ATHIX analysis pipeline.
-
 ### 2. YOLO Pose Estimation
-
-Uses an Ultralytics YOLO pose model to detect human body keypoints across video frames.
-
-Detected landmarks are used to estimate body positioning and calculate joint angles.
 
 ### 3. Joint-Angle Calculation
 
@@ -65,21 +47,11 @@ Calculates selected biomechanical angles, including:
 
 ### 4. Movement Data Processing
 
-Extracts pose landmarks and joint-angle measurements, applies smoothing and generates movement-phase data.
-
 ### 5. Annotated Video Visualisation
 
-Displays the original recording alongside a pose-annotated video showing detected body keypoints and skeletal connections.
+### 6. Experimental Similarity Measurement
 
-### 6. Trainer Reference Comparison
-
-Allows an analysed trainer demonstration to be saved as a reference for a batting technique.
-
-Future player recordings can then be compared against the saved reference using extracted joint-angle patterns.
-
-### 7. Experimental Similarity Measurement
-
-ATHIX calculates an experimental joint-angle similarity percentage between the player's recording and the saved trainer reference.
+ATHIX calculates an experimental similarity percentage between the player's recording and the saved trainer reference.
 
 The comparison currently uses eight joint-angle patterns and 100 normalised time samples.
 

@@ -1,4 +1,4 @@
-# ATHIX — AI-Assisted Sports Technique Analysis
+  # ATHIX — AI-Assisted Sports Technique Analysis
 
 <p align="center">
   <strong>Understand movement. Analyse technique. Improve performance.</strong>
